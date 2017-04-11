@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 18, 2016 5:58:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Cart" table="Cart" schema="dbo" catalog="SOF301" optimistic-lock="version">
+        <id name="numberCart" type="string">
+            <column name="numberCart" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="number" type="string">
+            <column name="number" length="20" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="50" />
+        </property>
+        <property name="code" type="string">
+            <column name="code" length="50" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="50" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

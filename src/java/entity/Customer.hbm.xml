@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 18, 2016 5:58:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Customer" table="Customer" schema="dbo" catalog="SOF301" optimistic-lock="version">
+        <id name="username" type="string">
+            <column name="Username" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="Password" length="20" not-null="true" />
+        </property>
+        <property name="hoten" type="string">
+            <column name="Hoten" length="50" />
+        </property>
+        <property name="gioitinh" type="string">
+            <column name="Gioitinh" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="50" />
+        </property>
+        <property name="role" type="string">
+            <column name="Role" length="10" />
+        </property>
+        <property name="anh" type="string">
+            <column name="Anh" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
